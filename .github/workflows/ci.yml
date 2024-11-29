@@ -34,7 +34,7 @@ jobs:
     - uses: ilammy/msvc-dev-cmd@v1
     - name: Install dependencies
       run: |
-        vcpkg integrate install
+        vcpkg integrate install ----vcpkg-root=c:\vcpkg
     - name: Build
       run: |
         msbuild mfaktoVS12.vcxproj
