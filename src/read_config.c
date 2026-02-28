@@ -801,25 +801,6 @@ int read_config(mystuff_t *mystuff)
 
   /*****************************************************************************/
 
-  if(my_read_int(mystuff->inifile, "SmallExp", &i))
-  {
-    logprintf(mystuff, "Warning: Cannot read SmallExp from INI file, set to 0 by default\n");
-    i=0;
-  }
-  else if(i != 0 && i != 1)
-  {
-    logprintf(mystuff, "Warning: SmallExp must be 0 or 1, set to 0 by default\n");
-    i=0;
-  }
-  if(mystuff->verbosity >= 1)
-  {
-    if(i == 0)logprintf(mystuff, "  SmallExp                  no\n");
-    else      logprintf(mystuff, "  SmallExp                  yes\n");
-  }
-  mystuff->small_exp = i;
-
-  /*****************************************************************************/
-
   if(my_read_string(mystuff->inifile, "OCLCompileOptions", mystuff->CompileOptions, 150))
   {
     mystuff->CompileOptions[0]='\0';

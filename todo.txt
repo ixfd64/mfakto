@@ -120,7 +120,7 @@ TODO
 +NO+ - AllowSleep + not needed due to GPU sieving +
 +DONE+ - _kbhit + getchar to allow config changes at runtime
 +DONE+ perftest modes for sieving (SIEVE_SIZE), data copy and kernel speed.
-+DONE+ allow for kernel reload (e.g. different vector size, or -DSMALL_EXP)
++DONE+ allow for kernel reload (e.g. different vector size)
 +DONE+ Split device detection from kernel compilation to make use of device's capabilities
 +DONE+ correct GHzDays prediction for factors found
 +DONE+ Complete instructions on building on Windows (VS and MinGW)
@@ -147,5 +147,3 @@ TODO
 5 div/mul-modulo for 96 bits
 5 cleanup: separate GPU- and CPU-sieve based kernels, compile and load only one set of them
 5 repunit
-
-merge mfaktc changes: small exps: should correct failing test
