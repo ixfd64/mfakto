@@ -1771,9 +1771,6 @@ if (mystuff.more_classes == 1)  strcat(program_options, " -DMORE_CLASSES");
   if (mystuff.gpu_sieving == 1)
     strcat(program_options, " -DCL_GPU_SIEVE");
 
-  if (mystuff.small_exp == 1)
-    strcat(program_options, " -DSMALL_EXP");
-
   // compile options defined in mfakto.ini override the defaults
   if (mystuff.CompileOptions[0]) {
     strcpy(program_options, mystuff.CompileOptions);

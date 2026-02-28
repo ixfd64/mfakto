@@ -291,7 +291,6 @@ typedef struct _mystuff_t
 
   cl_uint  vectorsize;
   cl_uint  printmode;
-  cl_uint  small_exp;
   cl_uint  print_timestamp;
   cl_uint  quit;
   cl_ulong cpu_mask;           /* CPU affinity mask for the siever thread */

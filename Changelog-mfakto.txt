@@ -60,6 +60,7 @@ other changes:
 - removed inaccurate throughput information from program output
 - macOS is now detected as "macOS" rather than the kernel name "Darwin"
 - switched to the semantic versioning scheme
+- removed the unused SmallExp setting
 
 version 0.15
 ==============================
